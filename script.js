@@ -115,7 +115,7 @@ async function getRandomUsers(count = 1) {
 
   return results.map((user) => {
     return {
-      imgSrc: user.picture.thumbnail,
+      imgSrc: user.picture.large,
       fullname: `${user.name.first} ${user.name.last}`,
       position: positions[Math.floor(Math.random() * positions.length)],
     };
